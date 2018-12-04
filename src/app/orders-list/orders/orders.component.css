@@ -1,0 +1,14 @@
+.info-text {
+    text-align: center;
+}
+
+.noorders {
+  text-align: center;
+  color: red;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+mat-spinner {
+  margin: auto;
+}

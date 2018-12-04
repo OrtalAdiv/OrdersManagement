@@ -1,0 +1,30 @@
+<div class="flex-container">
+  <div><button class="button" style="vertical-align:auto"><span>מנהלת משרד </span></button></div>
+  <div><button class="button" style="vertical-align:auto"><span>גרפיקה </span></button></div>
+  <div><button class="button" style="vertical-align:auto"><span>רכש</span></button></div>
+  <div><button class="button" style="vertical-align:auto"><span>ייצור </span></button></div>
+  <div><button class="button" style="vertical-align:auto"><span>מחלקת כספים </span></button></div>
+  <div><button class="button" style="vertical-align:auto"><span>סיום </span></button></div>
+</div>
+
+<p></p>
+<P></P>
+
+<div class="form-div">
+  <form [formGroup]="form" (submit)="OnSaveOrder()">
+    <label for="fname">First Name</label>
+    <input type="text" formControlName="title" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" formControlName="content" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country" formControlName="region">
+      <option value="australia">Israel</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>

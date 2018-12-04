@@ -1,0 +1,12 @@
+<mat-spinner></mat-spinner>
+<mat-accordion multi="true" *ngIf="!isloading">
+    <mat-expansion-panel *ngFor="let order of orderlist">
+        <mat-expansion-panel-header>
+            {{order.title}}
+          </mat-expansion-panel-header>
+          <p>{{order.content}}</p>
+          <p>{{order.region}}</p>
+    </mat-expansion-panel>
+</mat-accordion>
+
+<p class="noorders" *ngIf="orderlist.length == 0 && !isloading"> No Orders Found!</p>
